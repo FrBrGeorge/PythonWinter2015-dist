@@ -8,3 +8,6 @@ testinstall:
 clean:
 	python setup.py clean
 	rm -rf $(GENERATED) $(DEST)
+
+show:
+	find $(DEST)
