@@ -18,4 +18,8 @@ setup(name = 'thepackage',
         "Topic :: Utilities",
         "License :: OSI Approved :: BSD License",
       ],
-      )
+      entry_points = {
+          'console_scripts': 
+            [ 'donotning = thepackage.core:install', ],
+            }
+)

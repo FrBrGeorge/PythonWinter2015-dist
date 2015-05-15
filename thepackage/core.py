@@ -2,3 +2,6 @@
 
 def something():
     return "something"
+
+def install():
+    return "QQ"
