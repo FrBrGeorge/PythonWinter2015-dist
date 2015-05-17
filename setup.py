@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import os
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, Extension
 from markdown import markdown
 
 setup(name = 'thepackage',
@@ -26,4 +26,5 @@ setup(name = 'thepackage',
       install_requires=[
           'markdown',
       ],
+      ext_modules = [Extension('thepackage/repeat', sources = ['thepackage/thelib/repeat.c'])]
 )
